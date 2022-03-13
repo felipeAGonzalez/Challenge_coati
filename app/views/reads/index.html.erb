@@ -1,0 +1,71 @@
+<%=%><p id="notice"><%= notice %></p>
+
+<h1>Información de las tablas</h1>
+<%= link_to 'Subir archivo', reads_new_path %>
+<div>
+<h2>Compradores</h2>
+<div class="table-wrapper">
+    <table class="fl-table">
+  <thead>
+    <tr>
+    <th>Nombre</th> 
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @buyers.each do |buyer| %>
+      <tr>
+      <td><%= buyer.nombre %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<h2>Productos</h2>
+
+<div class="table-wrapper">
+    <table class="fl-table">
+  <thead>
+    <tr>
+    <th>Detalle</th> 
+    <th>Precio</th> 
+    <th>Total de Productos</th> 
+    <th>Total</th> 
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @items.each do |item| %>
+      <tr>
+      <td><%= item.detalle %></td>
+      <td><%= item.precio %></td>
+      <td><%= item.total %></td>
+      <td><%= item.total*item.precio %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<h2>Vendedores</h2>
+
+<div class="table-wrapper">
+    <table class="fl-table">
+  <thead>
+    <tr>
+    <th>Nombre</th> 
+    <th>Direccion</th> 
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sellers.each do |seller| %>
+      <tr>
+      <td><%= seller.name %></td>
+      <td><%= seller.direccion %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+</div>
+
+

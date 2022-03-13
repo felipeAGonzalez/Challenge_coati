@@ -1,0 +1,14 @@
+<%= form_with(model: @read, local: true) do |form| %>
+
+    <div>
+    <%=form.label :File %>
+    <%=form.file_field :file %>
+    </div>
+
+    <div>
+    <%= form.submit %>
+    <%=link_to :Inicio, root_path %>
+    </div>
+
+    
+<%end%>

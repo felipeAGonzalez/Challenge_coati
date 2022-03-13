@@ -15,7 +15,7 @@
   <tbody>
     <% @buyers.each do |buyer| %>
       <tr>
-      <td><%= buyer.nombre %></td>
+      <td><%= buyer.name %></td>
       </tr>
     <% end %>
   </tbody>
@@ -37,10 +37,10 @@
   <tbody>
     <% @items.each do |item| %>
       <tr>
-      <td><%= item.detalle %></td>
-      <td><%= item.precio %></td>
-      <td><%= item.total %></td>
-      <td><%= item.total*item.precio %></td>
+      <td><%= item.item_detail %></td>
+      <td><%= item.item_prize %></td>
+      <td><%= item.total_items %></td>
+      <td><%= item.total_items*item.item_prize %></td>
       </tr>
     <% end %>
   </tbody>
@@ -60,7 +60,7 @@
     <% @sellers.each do |seller| %>
       <tr>
       <td><%= seller.name %></td>
-      <td><%= seller.direccion %></td>
+      <td><%= seller.address %></td>
       </tr>
     <% end %>
   </tbody>

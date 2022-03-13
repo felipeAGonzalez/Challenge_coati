@@ -9,7 +9,7 @@
 /test/tmp/
 /test/version_tmp/
 /tmp/
-/storage/system/
+/storage/*
 log/development.log
 
 # Used by dotenv library to load environment variables.

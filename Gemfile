@@ -6,7 +6,6 @@ ruby '2.6.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.0.4', '>= 6.0.4.7'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
 
 gem 'mysql2'
 

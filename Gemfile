@@ -5,9 +5,9 @@ ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.0.4', '>= 6.0.4.7'
-# Use sqlite3 as the database for Active Record
+# Gemas instaladas por el desarriollador @felipeAGonzalez
 gem 'paperclip'
-
+gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'mysql2'
 
 # Use Puma as the app server
@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+# Grupo creado por el desarriollador @felipeAGonzalez
 group :test do
   gem 'sqlite3', '~> 1.4'
   

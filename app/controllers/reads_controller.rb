@@ -1,5 +1,7 @@
 class ReadsController < ApplicationController
     after_action :read_file, only: [:create]
+    before_action :authenticate_user!
+
     def new 
         Read.new
     end

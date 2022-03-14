@@ -17,6 +17,7 @@ log/development.log
 
 # Ignore Byebug command history file.
 .byebug_history
+yarn-error.log
 
 ## Specific to RubyMotion:
 .dat*
